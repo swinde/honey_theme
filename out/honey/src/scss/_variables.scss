@@ -1,0 +1,23 @@
+//Colors
+$gray-600: #6c757d !default;
+$theme-colors: (
+        primary: #27ca8f,
+        secondary:#40beca
+
+);
+$basic-primary:       #27ca8f;
+$basic-secondary:       #40beca;
+
+$price-color: #ff9719;
+
+//Sozial Links Colors
+$sozial-color-fb:   #428BCA;
+$sozial-color-tw:   #1AB2E8;
+$sozial-color-gpl:  #9e271f;
+$sozial-color-yt:   #CC181E;
+$sozial-color-wp:   #333333;
+
+//Fonts
+$fa-font-path:        "../fontawesome/webfonts";
+//Imports
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,700,600');
