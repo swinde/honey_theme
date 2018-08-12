@@ -1,15 +1,36 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,400,700,600");
-#header .dropdown-menu.service-menu {
-  min-width: 25rem;
-  padding: .5rem; }
+body.fixed-header #header {
+  position: relative;
+  padding-bottom: 42px; }
+  body.fixed-header #header #mainnav {
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    margin-top: -42px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
+    body.fixed-header #header #mainnav.fadeIn {
+      background-color: rgba(255, 255, 255, 0.95);
+      margin-top: 0;
+      transition: all .2s; }
+    body.fixed-header #header #mainnav.fullviewlayout {
+      left: 0;
+      right: 0; }
+    body.fixed-header #header #mainnav .fixed-header-actions {
+      display: flex; }
+      body.fixed-header #header #mainnav .fixed-header-actions .nav-item {
+        padding: 0 .5rem; }
 
-#header .dropdown-menu #services .nav-link {
-  padding: 0;
-  font-size: .9rem; }
+#mainnav .fixed-header-actions {
+  display: none; }
 
-#header .btn.dropdown-toggle {
-  font-size: 0.9rem;
-  background: none; }
+#header {
+  background-color: #b6e6ea; }
+  #header .header-box .menus-col .menu-dropdowns {
+    text-align: center; }
+    #header .header-box .menus-col .menu-dropdowns .btn {
+      background-color: transparent; }
+  #header .header-box .menus-col .minibasket-menu .dropdown-toggle::after {
+    display: none; }
 
 footer .nav-link {
   padding: 0;
