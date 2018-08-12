@@ -8,7 +8,7 @@
 
         <div class="[{if $blFullwidth}]container[{else}]container-fluid[{/if}]">
 
-            <div class="header-box pb-lg-5 pt-lg-5">
+            <div class="header-box">
 
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-4 logo-col">
@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 order-12 menus-col">
                         [{block name="layout_header_top"}]
-                            <div class="menu-dropdowns float-md-right">
+                            <div class="menu-dropdowns">
                                 [{block name="dd_layout_page_header_icon_menu_languages"}]
                                     [{* Language Dropdown*}]
                                     [{oxid_include_widget cl="oxwLanguageList" lang=$oViewConf->getActLanguageId() _parent=$oView->getClassName() nocookie=1 _navurlparams=$oViewConf->getNavUrlParams() anid=$oViewConf->getActArticleId()}]
@@ -61,14 +61,11 @@
                         [{include file="widget/header/search.tpl"}]
                     </div>
                 </div>
-
+                [{block name="layout_header_bottom"}]
+                [{oxid_include_widget cl="oxwCategoryTree" cnid=$oView->getCategoryId() sWidgetType="header" _parent=$oView->getClassName() nocookie=1}]
+                [{/block}]
             </div>
         </div>
-
-        [{block name="layout_header_bottom"}]
-            [{oxid_include_widget cl="oxwCategoryTree" cnid=$oView->getCategoryId() sWidgetType="header" _parent=$oView->getClassName() nocookie=1}]
-        [{/block}]
-
     </header>
 
 [{/block}]
