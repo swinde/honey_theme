@@ -1,0 +1,63 @@
+//Content
+
+
+
+
+
+  .tabbedWidgetBox{
+    .tab-content {
+      padding: 1.5rem;
+      border-left: 1px solid #dee2e6;
+      border-right: 1px solid #dee2e6;
+      border-bottom: 1px solid #dee2e6;
+    }
+  }
+
+
+.boxwrapper {
+  .list-container{
+    .gridView{
+      .productBox {
+        .picture {
+            border-bottom: 1px dashed #eee;
+            width: 100%;
+            display: table;
+            margin-bottom: 15px;
+            table-layout: fixed;
+          a {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+        .title {
+          font-weight: 600;
+        }
+        .price {
+          margin-bottom: 15px;
+          color:$price-color;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .boxwrapper {
+    .list-container{
+      .gridView{
+        .productBox {
+          .picture {
+            height: 16rem;
+          }
+          .title {
+            height: 3.5rem;
+            overflow: hidden;
+          }
+
+        }
+      }
+    }
+  }
+}

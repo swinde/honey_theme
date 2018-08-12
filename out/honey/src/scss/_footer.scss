@@ -1,0 +1,56 @@
+//Footer
+footer{
+  //Navigation
+  .nav-link{padding: 0;
+    color: $gray-600;
+  }
+  h4, .h4 {
+    font-size: 1.255rem;
+  }
+  .social-links{
+    a{
+      text-decoration: none;
+      .fa-facebook {color: $sozial-color-fb;}
+      .fa-google-plus-square {color: $sozial-color-gpl;}
+      .fa-twitter {color: $sozial-color-tw;}
+      .fa-youtube-square {color: #CC181E;}
+      .fa-wordpress {color: $sozial-color-wp;}
+      &:hover{
+        .fa-facebook {color: darken( $sozial-color-fb, 10% )}
+        .fa-google-plus-square{color: darken( $sozial-color-gpl, 10% )}
+        .fa-twitter{color: darken( $sozial-color-tw, 10% )}
+        .fa-youtube-square{color: darken( $sozial-color-yt, 10% )}
+        .fa-wordpress{color: darken( $sozial-color-wp, 10% )}
+      }
+    }
+    @media (min-width: 768px) {
+      .fa-facebook,.fa-google-plus-square,.fa-twitter,.fa-youtube-square,.fa-wordpress{
+        font-size: 2em;
+      }
+    }
+  }
+
+}
+//Toplink
+#jumptotop{
+  position: fixed;
+  display: block;
+  right: 35px;
+  bottom: 40px;
+  color: $basic-primary;
+  font-size: 4rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s,visibility 0s linear .3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  z-index: 1000;
+  &.show{
+    opacity: .5;
+    visibility: visible;
+    transition: opacity .3s;
+  }
+}
