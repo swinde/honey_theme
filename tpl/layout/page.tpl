@@ -11,7 +11,7 @@
 
     <div id="wrapper" [{if $sidebar}]class="sidebar[{$sidebar}]"[{/if}]>
 
-        <div class="[{if $blFullwidth}]container[{else}]container-fluid[{/if}]">
+        <div class="[{if $blFullwidth}]container-fluid[{else}]container[{/if}]">
 
             <div class="underdog">
 

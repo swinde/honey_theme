@@ -237,8 +237,8 @@
             [{oxscript include="js/libs/jquery.min.js" priority=1}]
             [{oxscript include="js/libs/jquery-ui.min.js" priority=1}]
             [{oxscript include="js/bootstrap.bundle.js" priority=1}]
-        [{oxscript include="js/jquery.smartmenus.js" priority=1}]
-        [{oxscript include="js/jquery.smartmenus-4.js" priority=1}]
+        [{*oxscript include="js/jquery.smartmenus.js" priority=1}]
+        [{oxscript include="js/jquery.smartmenus-4.js" priority=1*}]
             [{oxscript include="js/scripts.min.js" priority=1}]
         [{/block}]
 

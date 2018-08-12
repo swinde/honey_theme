@@ -7,19 +7,19 @@
         [{assign var="oxcmp_categories" value=$oxcmp_categories}]
         [{assign var="blFullwidth" value=$oViewConf->getViewThemeParam('blFullwidthLayout')}]
 
-        <nav id="mainnav" class="navbar navbar-expand-lg navbar-light bg-light mb-4" role="navigation">
-            <div class="[{if $blFullwidth}]container[{else}]container-fluid[{/if}]">
+        <nav id="mainnav" class="navbar navbar-expand-lg navbar-light bg-light [{if $blFullwidth}]fullviewlayout[{/if}]" role="navigation">
 
+            <div class="[{if $blFullwidth}]container[{else}]container-fluid[{/if}]">
                 [{block name="dd_widget_header_categorylist_navbar"}]
-                <a class="navbar-brand" href="#">Navbar</a>
-                        [{block name="dd_widget_header_categorylist_navbar_header"}]
+                <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
+                [{block name="dd_widget_header_categorylist_navbar_header"}]
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                        [{/block}]
+                [{/block}]
 
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="nav navbar-nav mr-auto">
+                        <ul class="navbar-nav">
                             [{block name="dd_widget_header_categorylist_navbar_list"}]
                                 <li class="nav-item[{if $homeSelected == 'true'}] active[{/if}]">
                                     <a class="nav-link" href="[{$oViewConf->getHomeLink()}]">[{oxmultilang ident="HOME"}]</a>
@@ -63,14 +63,16 @@
                             [{/block}]
                         </ul>
 
-                        <ul class="nav navbar-nav navbar-right fixed-header-actions">
-
-                            [{block name="categorylist_navbar_minibasket"}]
+                        <ul class="navbar-nav fixed-header-actions ml-auto">
+                            <li class="nav-item">
+                                [{block name="categorylist_navbar_minibasket"}]
                                 [{include file="widget/header/menubasket.tpl"}]
-                            [{/block}]
+                                [{/block}]
+                            </li>
 
-                            <li>
-                                <a href="javascript:void(null)" class="search-toggle" rel="nofollow">
+
+                            <li class="nav-item">
+                                <a href="javascript:void(null)" class="nav-link search-toggle" rel="nofollow">
                                     <i class="fa fa-search"></i>
                                 </a>
                             </li>
@@ -88,8 +90,8 @@
 
                     </div>
                 [{/block}]
-
             </div>
+
         </nav>
     [{/if}]
 [{/block}]
