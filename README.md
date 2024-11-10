@@ -1,4 +1,4 @@
-# honey_theme
+# honey-theme
 
 basierend auf Bootstrap 5 und Font Awesome 6
 
