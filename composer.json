@@ -45,5 +45,8 @@
                 "package-lock.json"
             ]
         }
+    },
+    "replace": {
+        "oxid-esales/wave-theme": "1.6.2"
     }
 }
