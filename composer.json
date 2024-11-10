@@ -1,6 +1,6 @@
 {
-    "name": "o3-shop/wave-theme",
-    "description": "This is Wave Theme for O3-Shop.",
+    "name": "swinde/honey-theme",
+    "description": "This is Honey Theme for O3-Shop.",
     "type": "oxideshop-theme",
     "keywords": [
         "o3-shop",
@@ -31,8 +31,8 @@
     "minimum-stability": "dev",
     "extra": {
         "oxideshop": {
-            "target-directory": "wave",
-            "assets-directory": "out/wave",
+            "target-directory": "honey",
+            "assets-directory": "out/honey",
             "blacklist-filter": [
                 "build/**/*",
                 ".gitignore",
@@ -45,8 +45,5 @@
                 "package-lock.json"
             ]
         }
-    },
-    "replace": {
-        "oxid-esales/wave-theme": "1.6.2"
     }
 }
