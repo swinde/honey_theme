@@ -1,0 +1,52 @@
+{
+    "name": "o3-shop/wave-theme",
+    "description": "This is Wave Theme for O3-Shop.",
+    "type": "oxideshop-theme",
+    "keywords": [
+        "o3-shop",
+        "themes",
+        "eShop"
+    ],
+    "homepage": "https://www.o3-shop.com/",
+    "license": [
+        "GPL-3.0-only"
+    ],
+    "author": [
+        {
+            "name": "OXID eSales AG",
+            "email": "info@oxid-esales.com",
+            "homepage": "https://oxid-esales.com",
+            "role": "Developer"
+        },
+        {
+            "name": "O3-Shop",
+            "email": "info@o3-shop.com",
+            "homepage": "https://www.o3-shop.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "o3-shop/shop-ce": "^1.2"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "oxideshop": {
+            "target-directory": "wave",
+            "assets-directory": "out/wave",
+            "blacklist-filter": [
+                "build/**/*",
+                ".gitignore",
+                ".gitattributes",
+                "CHANGELOG.md",
+                "composer.json",
+                "CONTRIBUTING.md",
+                "Gruntfile.js",
+                "package.json",
+                "package-lock.json"
+            ]
+        }
+    },
+    "replace": {
+        "oxid-esales/wave-theme": "1.6.2"
+    }
+}
