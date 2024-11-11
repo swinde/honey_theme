@@ -174,7 +174,6 @@ module.exports = function (grunt) {
      * Run `grunt` on the command line
      */
     grunt.registerTask('default', [
-        'copy',
         'sass',
         'postcss',
         'combine_mq',

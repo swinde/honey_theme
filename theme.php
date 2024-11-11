@@ -17,8 +17,8 @@
  * @copyright  Copyright (c) 2022 O3-Shop (https://www.o3-shop.com)
  * @license    https://www.gnu.org/licenses/gpl-3.0  GNU General Public License 3 (GPLv3)
  */
-$oTheme = oxNew('oxtheme');
-$oTheme->load('wave');
+//$oTheme = oxNew('oxtheme');
+//$oTheme->load('wave');
 /**
  * Theme Information
  */
@@ -27,7 +27,7 @@ $aTheme = array(
     'title'       => 'Honey',
     'description' => 'Honey is experimentel responsive theme based on the CSS framework Bootstrap5.',
     'thumbnail'   => 'theme.jpg',
-    'version'     => '1.1.0',
+    'version'     => '1.2.0',
     'author'      => '<a href="https://www.o3-shop.com" title="O3-Shop">O3-Shop</a>',
     'settings'    => array(
         array(
@@ -483,6 +483,6 @@ $aTheme = array(
             'value' => '665*665',
         ),
     ),
-	'parentTheme' => 'wave',
-	'parentVersions' => array($oTheme->getInfo('version'))
+	//'parentTheme' => 'wave',
+	//'parentVersions' => array($oTheme->getInfo('version'))
 );
