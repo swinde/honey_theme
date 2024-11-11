@@ -41,7 +41,7 @@
         </div>
 
         <div class="form-group">
-            <label class="req control-label col-12 col-lg-3">[{oxmultilang ident="VALID_UNTIL"}]</label>
+            <label class="req control-label col col-lg-3">[{oxmultilang ident="VALID_UNTIL"}]</label>
             <div class="col-6 col-lg-2">
                 <select name="dynvalue[kkmonth]" class="form-control" required="required">
                     <option [{if $dynvalue.kkmonth == "01"}]selected[{/if}]>01</option>
@@ -81,7 +81,7 @@
         [{block name="checkout_payment_longdesc"}]
             [{if $paymentmethod->oxpayments__oxlongdesc->value}]
                 <div class="row">
-                    <div class="col-12 col-lg-9 offset-lg-3">
+                    <div class="col col-lg-9 offset-lg-3">
                         <div class="alert alert-info desc">
                             [{$paymentmethod->oxpayments__oxlongdesc->getRawValue()}]
                         </div>

@@ -50,7 +50,7 @@
 
 <div class="details-info">
     <div class="row">
-        <div class="col-12 col-md-4 details-col-left">
+        <div class="col col-md-4 details-col-left">
             [{* article picture with zoom *}]
             [{block name="details_productmain_zoom"}]
                 [{oxscript include="js/libs/photoswipe.min.js" priority=8}]
@@ -88,7 +88,7 @@
             [{/block}]
         </div>
 
-        <div class="col-12 col-sm-8 col-md-5 col-lg-6 details-col-middle">
+        <div class="col col-sm-8 col-md-5 col-lg-6 details-col-middle">
             [{block name="details_productmain_title"}]
                 <h1 id="productTitle" class="details-title" itemprop="name">
                     [{$oDetailsProduct->oxarticles__oxtitle->value}] [{$oDetailsProduct->oxarticles__oxvarselect->value}]
@@ -307,7 +307,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2 details-col-right">
+        <div class="col col-sm-4 col-md-3 col-lg-2 details-col-right">
             [{if $oManufacturer}]
                 <div class="brandLogo">
                     [{block name="details_productmain_manufacturersicon"}]

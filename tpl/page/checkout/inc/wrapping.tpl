@@ -57,7 +57,7 @@
                                         </div>
                                         <div class="card-body">
                                             <div id="wrapp_[{$smarty.foreach.wrappArt.iteration}]" class="row">
-                                            <div class="col-12">
+                                            <div class="col">
                                                 <div class="row">
                                                 <div class="col-3"></div>
                                                     <div class="col-9 offset-sm-3">
@@ -82,7 +82,7 @@
                                                         </div>
                                                         <div class="col-9">
                                                     [{else}]
-                                                        <div class="col-12">
+                                                        <div class="col">
                                                     [{/if}]
                                                             <div class="form-group">
                                                                 <div class="radio">
@@ -140,7 +140,7 @@
                                                         </div>
                                                         <div class="col-9">
                                                     [{else}]
-                                                        <div class="col-12">
+                                                        <div class="col">
                                                     [{/if}]
                                                         <div class="form-group">
                                                             <div class="radio">

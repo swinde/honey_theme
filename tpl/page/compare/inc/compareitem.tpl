@@ -7,7 +7,7 @@
     [{/if}]
 
     <div class="row picture">
-        <div class="col-12">
+        <div class="col">
             <a href="[{$_productLink}]" [{if $oView->noIndex()}]rel="nofollow"[{/if}]>
                 <img src="[{if $size=='big'}][{$product->getPictureUrl(1)}][{elseif $size=='thinest'}][{$product->getIconUrl()}][{else}][{$product->getThumbnailUrl()}][{/if}]" alt="[{$product->oxarticles__oxtitle->value|strip_tags}] [{$product->oxarticles__oxvarselect->value|default:''}]" class="img-fluid">
             </a>

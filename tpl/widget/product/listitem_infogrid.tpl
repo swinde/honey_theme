@@ -57,7 +57,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-5">
+            <div class="col col-lg-5">
                 [{block name="widget_product_listitem_infogrid_gridpicture"}]
                     <div class="picture text-center">
                         <a href="[{$_productLink}]" title="[{$product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]">
@@ -66,7 +66,7 @@
                     </div>
                 [{/block}]
             </div>
-            <div class="col-12 col-lg-7">
+            <div class="col col-lg-7">
                 <div class="listDetails">
                     [{block name="widget_product_listitem_infogrid_titlebox"}]
                         <div class="title">

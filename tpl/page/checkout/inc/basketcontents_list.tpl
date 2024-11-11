@@ -23,7 +23,7 @@
 
                     <div class="col-8 col-md-7">
                         <div class="row">
-                            <div class="col-12 col-md-6">
+                            <div class="col col-md-6">
                             [{block name="checkout_basketcontents_basketitem_titlenumber"}]
                                 [{block name="checkout_basketcontents_basketitem_title"}]
                                     [{if $editable}]<a rel="nofllow" href="[{$basketitem->getLink()}]">[{/if}]
@@ -105,7 +105,7 @@
                                 [{/block}]
                             [{/block}]
                             </div>
-                            <div class="col-12 col-md-6">
+                            <div class="col col-md-6">
                                 [{block name="checkout_basketcontents_basketitem_wrapping"}]
                                     [{* product wrapping *}]
                                     [{if $oView->isWrapping()}]
@@ -161,7 +161,7 @@
 
 
 
-                    <div class="col-12 col-md-3">
+                    <div class="col col-md-3">
                         [{if $editable}]
                             <div class="text-right">
                                 <a href="#" class="toggle-actions">

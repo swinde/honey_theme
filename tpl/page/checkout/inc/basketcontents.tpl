@@ -20,7 +20,7 @@
 <div class="row">
 [{if $oViewConf->getShowVouchers() && $oViewConf->getActiveClassName() == 'basket'}]
     [{block name="checkout_basket_vouchers"}]
-        <div id="basketVoucher" class="col-12 col-md-6">
+        <div id="basketVoucher" class="col col-md-6">
             <form name="voucher" action="[{$oViewConf->getSelfActionLink()}]" method="post" class="js-oxValidate form-inline" role="form" novalidate="novalidate">
                 <div class="couponBox" id="coupon">
                     <div class="hidden">
@@ -59,7 +59,7 @@
 
 [{block name="checkout_basketcontents_summary"}]
 
-    <div id="basketSummary" class="col-12 col-md-6 summary[{if $oViewConf->getShowVouchers() && $oViewConf->getActiveClassName() != 'basket'}] offset-md-6[{/if}][{if $oViewConf->getActiveClassName() == 'order'}] orderSummary[{/if}]">
+    <div id="basketSummary" class="col col-md-6 summary[{if $oViewConf->getShowVouchers() && $oViewConf->getActiveClassName() != 'basket'}] offset-md-6[{/if}][{if $oViewConf->getActiveClassName() == 'order'}] orderSummary[{/if}]">
         [{*  basket summary  *}]
         <table class="table table-bordered table-striped">
             [{block name="checkout_basketcontents_summary_table_inner"}]

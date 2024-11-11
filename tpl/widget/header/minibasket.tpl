@@ -13,7 +13,7 @@
         [{block name="dd_layout_page_header_icon_menu_minibasket_list"}]
             <li>
                 <div class="row">
-                    <div class="col-12 ml-auto">
+                    <div class="col ml-auto">
                         <div class="minibasket-menu-box">
                             [{oxid_include_dynamic file="widget/minibasket/minibasket.tpl"}]
                         </div>

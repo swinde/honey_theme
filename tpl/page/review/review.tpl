@@ -7,7 +7,7 @@
         <div class="list-container" id="[{$listId}]">
             <div class="row lineView newItems">
                 [{block name="widget_product_listitem_line_picturebox"}]
-                    <div class="productData col-12 productBox">
+                    <div class="productData col productBox">
                         [{oxid_include_widget cl="oxwArticleBox" _parent=$oView->getClassName() nocookie=1 iLinkType=$product->getLinkType() _object=$product anid=$product->getId() sWidgetType="product" sListType="listitem_line" iIndex="list_1" blDisableToCart=true isVatIncluded=$oView->isVatIncluded() showMainLink=true toBasketFunction=false removeFunction=false skipESIforUser=1}]
                     </div>
                 [{/block}]

@@ -1,6 +1,6 @@
 [{capture append="oxidBlock_content"}]
     <div class="row">
-        <div class="col-12">
+        <div class="col">
             [{if $oView->getNewsletterStatus() == 4 || !$oView->getNewsletterStatus()}]
                 <h1 class="page-header">[{oxmultilang ident="STAY_INFORMED"}]</h1>
                 <div class="row">

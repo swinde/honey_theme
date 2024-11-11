@@ -8,7 +8,7 @@
             <div class="header-box">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4 order-lg-0 logo-col">
+                        <div class="col col-md-6 col-lg-4 order-lg-0 logo-col">
                             [{block name="layout_header_logo"}]
                                 [{assign var="slogoImg" value=$oViewConf->getViewThemeParam('sLogoFile')}]
                                 [{assign var="sLogoWidth" value=$oViewConf->getViewThemeParam('sLogoWidth')}]
@@ -18,7 +18,7 @@
                                 </a>
                             [{/block}]
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 order-lg-3 menus-col">
+                        <div class="col col-md-6 col-lg-4 order-lg-3 menus-col">
                             [{block name="layout_header_top"}]
                                 <div class="menu-dropdowns">
                                     [{block name="dd_layout_page_header_icon_menu_languages"}]
@@ -54,7 +54,7 @@
                                 </div>
                             [{/block}]
                         </div>
-                        <div class="col-12 col-lg-4 order-lg-2 search-col">
+                        <div class="col col-lg-4 order-lg-2 search-col">
                             [{include file="widget/header/search.tpl"}]
                         </div>
                     </div>

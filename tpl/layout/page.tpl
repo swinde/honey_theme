@@ -35,14 +35,14 @@
 
                 <div class="row">
                     [{if $sidebar && $sidebar != "Right"}]
-                        <div class="col-12 col-md-3 [{$oView->getClassName()}]">
+                        <div class="col col-md-3 [{$oView->getClassName()}]">
                             <div id="sidebar">
                                 [{include file="layout/sidebar.tpl"}]
                             </div>
                         </div>
                     [{/if}]
 
-                    <div class="col-12[{if $sidebar}] col-md-9[{/if}]">
+                    <div class="col[{if $sidebar}] col-md-9[{/if}]">
 
                         <div class="content mb-3" id="content">
                             [{block name="content_main"}]
@@ -57,7 +57,7 @@
                     </div>
 
                     [{if $sidebar && $sidebar == "Right"}]
-                        <div class="col-12 col-md-3 [{$oView->getClassName()}]">
+                        <div class="col col-md-3 [{$oView->getClassName()}]">
                             <div id="sidebar">
                                 [{include file="layout/sidebar.tpl"}]
                             </div>

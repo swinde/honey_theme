@@ -72,7 +72,7 @@
                         [{if $category->getIsVisible()}]
                             [{assign var="iSubCategoriesCount" value=$iSubCategoriesCount+1}]
                             [{assign var="iconUrl" value=$category->getIconUrl()}]
-                            <div class="col-12 col-sm-3">
+                            <div class="col col-sm-3">
                                 <div class="card-wrapper">
                                     <div class="card">
                                         <div class="card-header">

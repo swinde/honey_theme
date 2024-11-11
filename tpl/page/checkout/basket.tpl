@@ -27,7 +27,7 @@
                 <div class="card bg-light cart-buttons mb-3">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-12 col-md-6">
+                            <div class="col col-md-6">
                         [{block name="checkout_basket_backtoshop_top"}]
                             [{if $oView->showBackToShop()}]
                                 <form action="[{$oViewConf->getSslSelfLink()}]" method="post" class="float-left">
@@ -47,7 +47,7 @@
                             [{/if}]
                         [{/block}]
                             </div>
-                            <div class="col-12 col-md-6 text-right">
+                            <div class="col col-md-6 text-right">
                         [{if !$oView->isLowOrderPrice()}]
                             [{block name="basket_btn_next_top"}]
                                 <form action="[{$oViewConf->getSslSelfLink()}]" method="post" class="float-right">
@@ -75,7 +75,7 @@
                 <div class="card bg-light cart-buttons">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-12 col-md-6">
+                            <div class="col col-md-6">
                     [{block name="checkout_basket_loworderprice_bottom"}][{/block}]
 
                     [{block name="checkout_basket_backtoshop_bottom"}]
@@ -97,7 +97,7 @@
                         [{/if}]
                     [{/block}]
                             </div>
-                            <div class="col-12 col-md-6 text-right">
+                            <div class="col col-md-6 text-right">
                         [{if !$oView->isLowOrderPrice()}]
                             [{block name="basket_btn_next_bottom"}]
                                 <form action="[{$oViewConf->getSslSelfLink()}]" method="post" class="float-right">

@@ -60,7 +60,7 @@
         </div>
 
         <div class="row listDetails">
-            <div class="col-12 col-md-2">
+            <div class="col col-md-2">
                 <div class="picture">
                     [{block name="widget_product_listitem_line_picturebox"}]
                         <a id="[{$testid}]" href="[{$_productLink}]" title="[{$product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]">

@@ -48,7 +48,7 @@
                     [{/if}]
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-[{$iColIdent}] productBox">
+                <div class="col col-md-6 col-lg-[{$iColIdent}] productBox">
                     <div class="picture text-center">
                         <a href="[{$_product->getMainLink()}]" title="[{$sBargainArtTitle|strip_tags}]" class="img-thumbnail">
                             <img src="[{$_product->getThumbnailUrl()}]" alt="[{$sBargainArtTitle|strip_tags}]" class="img-fluid">

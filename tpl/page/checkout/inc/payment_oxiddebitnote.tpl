@@ -33,7 +33,7 @@
         [{block name="checkout_payment_longdesc"}]
             [{if $paymentmethod->oxpayments__oxlongdesc->value}]
                 <div class="row">
-                    <div class="col-12 col-lg-9 offset-lg-3">
+                    <div class="col col-lg-9 offset-lg-3">
                         <div class="alert alert-info desc">
                             [{$paymentmethod->oxpayments__oxlongdesc->getRawValue()}]
                         </div>

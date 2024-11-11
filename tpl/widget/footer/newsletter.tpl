@@ -1,6 +1,6 @@
 [{block name="dd_footer_newsletter_form"}]
 <div class="row">
-    <div class="col-12 mx-auto col-md-8 mx-md-0 col-lg-12">
+    <div class="col mx-auto col-md-8 mx-md-0 col-lg-12">
         <form class="newsletter-form" role="form" action="[{$oViewConf->getSslSelfLink()}]" method="post">
             <div class="form-group">
                 [{block name="dd_footer_newsletter_form_inner"}]

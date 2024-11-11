@@ -10,11 +10,11 @@
     <footer class="footer" id="footer">
         <div class="[{if $blFullwidth}]container[{else}]container-fluid[{/if}]">
             <div class="row mb-4">
-                <div class="col-12 col-lg-8">
+                <div class="col col-lg-8">
                     <div class="row">
                         [{block name="dd_footer_servicelist"}]
                         <section
-                                class="col-12 [{if $blShowFullFooter}]col-md-6 col-lg-3[{else}]col-lg-6[{/if}] footer-box footer-box-service">
+                                class="col [{if $blShowFullFooter}]col-md-6 col-lg-3[{else}]col-lg-6[{/if}] footer-box footer-box-service">
                             <div class="h4 footer-box-title">[{oxmultilang ident="SERVICES"}]</div>
                             <div class="footer-box-content">
                                 [{block name="dd_footer_servicelist_inner"}]
@@ -25,7 +25,7 @@
                         [{/block}]
                         [{block name="dd_footer_information"}]
                         <section
-                                class="col-12 [{if $blShowFullFooter}]col-md-6 col-lg-3[{else}]col-lg-6[{/if}] footer-box footer-box-information">
+                                class="col [{if $blShowFullFooter}]col-md-6 col-lg-3[{else}]col-lg-6[{/if}] footer-box footer-box-information">
                             <div class="h4 footer-box-title">[{oxmultilang ident="INFORMATION"}]</div>
                             <div class="footer-box-content">
                                 [{block name="dd_footer_information_inner"}]
@@ -36,7 +36,7 @@
                         [{/block}]
                         [{if $blShowFullFooter}]
                         [{block name="dd_footer_manufacturerlist"}]
-                        <section class="col-12 col-md-6 col-lg-3 footer-box footer-box-manufacturers">
+                        <section class="col col-md-6 col-lg-3 footer-box footer-box-manufacturers">
                             <div class="h4 footer-box-title">[{oxmultilang ident="OUR_BRANDS"}]</div>
                             <div class="footer-box-content">
                                 [{block name="dd_footer_manufacturerlist_inner"}]
@@ -46,7 +46,7 @@
                         </section>
                         [{/block}]
                         [{block name="dd_footer_categorytree"}]
-                        <section class="col-12 col-md-6 col-lg-3 footer-box footer-box-categories">
+                        <section class="col col-md-6 col-lg-3 footer-box footer-box-categories">
                             <div class="h4 footer-box-title">[{oxmultilang ident="CATEGORIES"}]</div>
                             <div class="footer-box-content">
                                 [{block name="dd_footer_categorytree_inner"}]
@@ -58,9 +58,9 @@
                         [{/if}]
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col col-lg-4">
                     <div class="row">
-                        <div class="col-12 mx-auto mx-lg-0">
+                        <div class="col mx-auto mx-lg-0">
                             [{if $oView->showNewsletter()}]
                             <section class="footer-box footer-box-newsletter">
                                 <div class="h4 footer-box-title">[{oxmultilang ident="NEWSLETTER"}]</div>

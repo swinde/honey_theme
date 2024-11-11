@@ -10,7 +10,7 @@
         [{/if}]
 
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col col-md-6">
                 [{block name="account_dashboard_col1"}]
                     <div class="card">
                         <div class="card-header">
@@ -61,7 +61,7 @@
                     [{/if}]
                 [{/block}]
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col col-md-6">
                 [{block name="account_dashboard_col2"}]
                     <div class="card">
                         <div class="card-header">

@@ -29,7 +29,7 @@
                         [{/if}]
                         [{assign var="iSubCategoriesCount" value=$iSubCategoriesCount+1}]
                         [{assign var="iconUrl" value=$category->getIconUrl()}]
-                        <div class="col-12 col-sm-6 col-md-4">
+                        <div class="col col-sm-6 col-md-4">
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">

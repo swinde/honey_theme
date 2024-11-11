@@ -11,7 +11,7 @@
         [{*oxscript include="js/libs/pages/contact.min.js" priority=10*}]
 
         <div class="row">
-            <div class="col-12">
+            <div class="col">
                 <div class="google-maps">
                     <figure>
                         <iframe width="100%" height="400" style="width:100%;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.de/maps?t=m&amp;q=[{$sGoogleMapsAddr|urlencode}]&amp;ie=UTF8&amp;hq=[{$sGoogleMapsAddr|urlencode}]&amp;output=embed"></iframe>
@@ -22,7 +22,7 @@
     [{/if}]
 
     <div class="row">
-        <div class="col-12 col-lg-3 pull-right">
+        <div class="col col-lg-3 pull-right">
             <h2 class="page-header">[{oxmultilang ident="ADDRESS"}]</h2>
             <div itemscope itemtype="http://schema.org/Organization">
                 <address>
@@ -46,7 +46,7 @@
                 </address>
             </div>
         </div>
-        <div class="col-12 col-lg-9">
+        <div class="col col-lg-9">
             <h2 class="page-header">[{oxmultilang ident="DD_CONTACT_FORM_HEADING"}]</h2>
             [{include file="form/contact.tpl"}]
         </div>

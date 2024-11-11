@@ -27,7 +27,7 @@
         [{block name="dd_layout_page_header_icon_menu_account_list"}]
             <li>
                 <div class="row">
-                    <div class="[{if !$oxcmp_user}]col-12 col-sm-5[{else}]col-12[{/if}] order-1 order-md-2">
+                    <div class="[{if !$oxcmp_user}]col col-sm-5[{else}]col[{/if}] order-1 order-md-2">
                         <div class="service-menu-box clearfix">
                             [{include file="widget/header/servicebox.tpl"}]
                             [{if $oxcmp_user}]
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     [{if !$oxcmp_user}]
-                        <div class="col-12 col-sm-7 order-2 order-md-1">
+                        <div class="col col-sm-7 order-2 order-md-1">
                             <div class="service-menu-box clearfix">
                                 [{include file="widget/header/loginbox.tpl"}]
                             </div>

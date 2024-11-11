@@ -58,7 +58,7 @@
 
                                     [{block name="widget_reviews_form_fields"}]
                                         <div class="form-group">
-                                            <div class="col-12">
+                                            <div class="col">
                                                 <textarea  rows="15" name="rvw_txt" class="form-control"></textarea>
                                             </div>
                                         </div>
@@ -66,7 +66,7 @@
 
                                     [{block name="widget_reviews_form_buttons"}]
                                         <div class="form-group">
-                                            <div class="col-12">
+                                            <div class="col">
                                                 <button id="reviewSave" type="submit" class="submitButton btn btn-primary">[{oxmultilang ident="SAVE_RATING_AND_REVIEW"}]</button>
                                             </div>
                                         </div>
