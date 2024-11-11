@@ -11,11 +11,11 @@
     [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxfname}]
 
     [{block name="contact_form_fields"}]
-        <div class="form-group">
-            <label class="[{if $contactFormFields.salutation.isRequired}]req[{/if}] control-label col-lg-2">
+        <div class="row mb-3">
+            <label class="[{if $contactFormFields.salutation.isRequired}]req[{/if}] col-form-label col-md-2">
                 [{oxmultilang ident="TITLE"}]
             </label>
-            <div class="col-lg-10 controls">
+            <div class="col-md-10 controls">
                 [{include
                 file="form/fieldset/salutation.tpl"
                 name="editval[oxuser__oxsal]"
@@ -25,12 +25,12 @@
                 }]
             </div>
         </div>
-        <div class="form-group[{if $aErrors.oxuser__oxfname}] oxInValid[{/if}]">
-            <label class="[{if $contactFormFields.firstName.isRequired}]req[{/if}] control-label col-lg-2"
+        <div class="row mb-3[{if $aErrors.oxuser__oxfname}] oxInValid[{/if}]">
+            <label class="[{if $contactFormFields.firstName.isRequired}]req[{/if}] col-form-label col-md-2"
                    for="editval[oxuser__oxfname]">
                 [{oxmultilang ident="FIRST_NAME"}]
             </label>
-            <div class="col-lg-10 controls">
+            <div class="col-md-10 controls">
                 <input type="text"
                        name="editval[oxuser__oxfname]"
                        id="editval[oxuser__oxfname]"
@@ -42,12 +42,12 @@
                        [{if $contactFormFields.firstName.isRequired}]required="required"[{/if}] >
             </div>
         </div>
-        <div class="form-group[{if $aErrors.oxuser__oxlname}] oxInValid[{/if}]">
-            <label class="[{if $contactFormFields.lastName.isRequired}]req[{/if}] control-label col-lg-2"
+        <div class="row mb-3[{if $aErrors.oxuser__oxlname}] oxInValid[{/if}]">
+            <label class="[{if $contactFormFields.lastName.isRequired}]req[{/if}] col-form-label col-md-2"
                    for="editval[oxuser__oxlname]">
                 [{oxmultilang ident="LAST_NAME"}]
             </label>
-            <div class="col-lg-10 controls">
+            <div class="col-md-10 controls">
                 <input type="text"
                        name="editval[oxuser__oxlname]"
                        id="editval[oxuser__oxlname]"
@@ -59,12 +59,12 @@
                        [{if $contactFormFields.lastName.isRequired}]required="required"[{/if}]>
             </div>
         </div>
-        <div class="form-group[{if $aErrors.oxuser__oxusername}] oxInValid[{/if}]">
-            <label class="[{if $contactFormFields.email.isRequired}]req[{/if}] control-label col-lg-2"
+        <div class="row mb-3[{if $aErrors.oxuser__oxusername}] oxInValid[{/if}]">
+            <label class="[{if $contactFormFields.email.isRequired}]req[{/if}] col-form-label col-md-2"
                    for="contactEmail">
                 [{oxmultilang ident="EMAIL"}]
             </label>
-            <div class="col-lg-10 controls">
+            <div class="col-md-10 controls">
                 <input id="contactEmail"
                        type="email"
                        name="editval[oxuser__oxusername]"
@@ -76,12 +76,12 @@
                        [{if $contactFormFields.email.isRequired}]required="required"[{/if}]>
             </div>
         </div>
-        <div class="form-group[{if $aErrors && !$oView->getContactSubject()}] oxInValid[{/if}]">
-            <label class="[{if $contactFormFields.subject.isRequired}]req[{/if}] control-label col-lg-2"
+        <div class="row mb-3[{if $aErrors && !$oView->getContactSubject()}] oxInValid[{/if}]">
+            <label class="[{if $contactFormFields.subject.isRequired}]req[{/if}] col-form-label col-md-2"
                    for="c_subject">
                 [{oxmultilang ident="SUBJECT"}]
             </label>
-            <div class="col-lg-10 controls">
+            <div class="col-md-10 controls">
                 <input type="text"
                        name="c_subject"
                        id="c_subject"
@@ -92,12 +92,12 @@
                        [{if $contactFormFields.subject.isRequired}]required="required"[{/if}]>
             </div>
         </div>
-        <div class="form-group">
-            <label class="[{if $contactFormFields.message.isRequired}]req[{/if}] control-label col-lg-2"
+        <div class="row mb-3">
+            <label class="[{if $contactFormFields.message.isRequired}]req[{/if}] col-form-label col-md-2"
                    for="c_message">
                 [{oxmultilang ident="MESSAGE"}]
             </label>
-            <div class="col-lg-10 controls">
+            <div class="col-md-10 controls">
                     <textarea rows="15"
                               cols="70"
                               name="c_message"
@@ -112,8 +112,8 @@
     [{block name="captcha_form"}][{/block}]
 
     [{block name="contact_form_buttons"}]
-        <div class="form-group">
-            <div class="col-lg-offset-2 col-lg-10">
+        <div class="row mb-3">
+            <div class="col-lg-offset-2 col-md-10">
                 <p class="alert alert-info">[{oxmultilang ident="COMPLETE_MARKED_FIELDS"}]</p>
                 <button class="btn btn-primary" type="submit">
                     <i class="fa fa-envelope"></i> [{oxmultilang ident="SEND"}]
