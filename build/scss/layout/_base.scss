@@ -1,6 +1,6 @@
 body {
   font-family: $font-family-base;
-  font-size: 14px;
+  font-size: $font-size-base;
   line-height: 1.42857143;
   color: $gray-dark;
   padding-top: 0;
@@ -99,3 +99,4 @@ body {
 span.badge:empty {
   display:none !important;
 }
+

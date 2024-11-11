@@ -1,17 +1,19 @@
-// Wave Theme
+// Honey Theme
 // @import url('https://fonts.googleapis.com/css?family=Raleway:200,400,600,700');
 
 @import 'variables';
 
+//Bootstrap 5
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 @import '../vendor/fontraleway-free-webfonts/scss/fontraleway';
 
-@import '../vendor/fontawesome-free-webfonts/scss/fontawesome';
+@import '../vendor/fontawesome-free-webfonts-6/scss/fontawesome';
 
-@import '../vendor/fontawesome-free-webfonts/scss/fa-solid';
-@import '../vendor/fontawesome-free-webfonts/scss/fa-regular';
-@import '../vendor/fontawesome-free-webfonts/scss/fa-brands';
+@import '../vendor/fontawesome-free-webfonts-6/scss/solid';
+@import '../vendor/fontawesome-free-webfonts-6/scss/regular';
+@import '../vendor/fontawesome-free-webfonts-6/scss/brands';
+
 @import "../vendor/photoswipe/scss/photoswipe";
 
 @import 'vendor/flexslider';
@@ -31,6 +33,7 @@
 @import 'page/list/list';
 @import 'page/err-404/err-404';
 
+@import 'widget/base';
 @import 'widget/manufacturersslider';
 @import 'widget/promoslider';
 @import 'widget/breadcrumb';

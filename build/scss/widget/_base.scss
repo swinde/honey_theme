@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 2rem !important;
+  --bs-gutter-y: 0;
+}
+//Welcomen Teaser
+.content-box{
+  .content{
+    .welcome-teaser{
+      padding: var(--bs-gutter-x);
+    }
+  }
+}
