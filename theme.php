@@ -22,9 +22,9 @@
  * Theme Information
  */
 $aTheme = array(
-    'id'          => 'wave',
-    'title'       => 'Wave',
-    'description' => 'Wave is O3-Shops official responsive theme based on the CSS framework Bootstrap 4.',
+    'id'          => 'honey',
+    'title'       => 'Honey',
+    'description' => 'Honey is experimentel responsive theme based on the CSS framework Bootstrap5.',
     'thumbnail'   => 'theme.jpg',
     'version'     => '1.1.0',
     'author'      => '<a href="https://www.o3-shop.com" title="O3-Shop">O3-Shop</a>',
