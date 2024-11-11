@@ -27,11 +27,12 @@ $line-height-base: 1.5 !default;
 
 //== Colors
 //
-//## Brand colors to use across Wave
+//## Brand colors to use across Honey
 
 $fa-font-path : '../fonts/' !default;
 
-$brand-primary:   #82BA00 !default;
+
+$brand-primary: #e1cb11 !default;
 $brand-secondary: #045089 !default;
 $brand-tertiary: #fff !default;
 
@@ -209,8 +210,10 @@ $breadcrumb-padding-horizontal: 0 !default;
 //##
 
 $container-max-widths: (
-        sm: 100%,
-        md: 750px,
-        lg: 970px,
-        xl: 1170px
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1320px
+
 ) !default;
