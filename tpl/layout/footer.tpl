@@ -96,12 +96,12 @@
                             </a>
                         </li>
                         [{/if}]
-                        [{if $oViewConf->getViewThemeParam('sGooglePlusUrl')}]
+                        [{if $oViewConf->getViewThemeParam('sInstagramUrl')}]
                         <li class="social-links-item">
                             <a target="_blank" class="social-links-link"
                                rel="noopener"
-                               href="[{$oViewConf->getViewThemeParam('sGooglePlusUrl')}]">
-                                <i class="fab fa-google-plus-square"></i> <span>Google+</span>
+                               href="[{$oViewConf->getViewThemeParam('sInstagramUrl')}]">
+                                <i class="fab fa-instagram"></i>" <span>Instagram</span>
                             </a>
                         </li>
                         [{/if}]
@@ -110,7 +110,7 @@
                             <a target="_blank" class="social-links-link"
                                rel="noopener"
                                href="[{$oViewConf->getViewThemeParam('sTwitterUrl')}]">
-                                <i class="fab fa-twitter"></i> <span>Twitter</span>
+                                <i class="fab fa-x"></i> <span>X (Twitter)</span>
                             </a>
                         </li>
                         [{/if}]
